@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Zone Block Gram Calculator</title>
+    <meta name="description" content="Scale-ready Zone diet food block calculator and auto-balancer for meals and snacks, based on official Zone & HYC gram guides with iPhone export support." />
+    <meta property="og:title" content="Zone Block Gram Calculator" />
+    <meta property="og:description" content="Scale-ready Zone diet food block calculator and auto-balancer for meals and snacks, based on official Zone & HYC gram guides with iPhone export support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ZoneBlocks" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script>
+      // Clear any looping dev service workers that cause infinite reloads
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (var i = 0; i < registrations.length; i++) {
+            registrations[i].unregister();
+          }
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-slate-900 text-slate-100 antialiased selection:bg-red-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

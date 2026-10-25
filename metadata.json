@@ -1,0 +1,6 @@
+{
+  "name": "Zone Block Gram Calculator",
+  "description": "Scale-ready Zone diet food block calculator and auto-balancer for meals and snacks, based on official Zone & HYC gram guides with iPhone export support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
